@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion site</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel=" stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <nav class="nav">
+            <div class="logo">
+                <img src="/images/logo.png" alt="">
+            </div>
+            <ul id="list" class="list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Fashion</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            <ul class="icons">
+                <a href="#"> <span class="iconify" data-icon="logos:twitter" data-inline="false"></span></a>
+                <a href="#"> <span class="iconify" data-icon="logos:facebook" data-inline="false"></span></a>
+                <a href="#"> <span class="iconify" data-icon="bx:bxl-instagram" data-inline="false"></span></a>
+                <a href="#"> <span class="iconify" data-icon="logos:vimeo-icon" data-inline="false"></span></a>
+            </ul>
+            <div id="ham" class="ham">
+                <span class="iconify bars" data-icon="uim:bars" data-inline="false"></span>
+            </div>
+        </nav>
+        <section class="home">
+            <div class="hometext">
+                <h1 class="homeheading">
+                    WELCOME! I'M CAITLYN
+
+                </h1>
+                <p>WELCOME! I'M CAITLYN
+                    I'm freelance photographer specializing in people & portrait photography, based in London.
+                    Photography
+                    is my passion and I love to turn ideas into beautiful things. Looking for a caring, fun, passionate
+                    and
+                    creative photographer? It's me!</p>
+            </div>
+        </section>
+
+        <section class="homeimages">
+            <h1 style="text-align: center;color: white; margin-bottom: 20px; font-size: 30px;">
+                What we do?
+            </h1>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div style="z-index: 9;" class="swiper-slide"><img src="/images/img1.jpg" alt="">
+                        <div class="imgtext">
+                            <a href="#">Browse more</a>
+                        </div>
+                    </div>
+                    <div style="z-index: 9;" class="swiper-slide"><img src="/images/img2.jpg" alt="">
+                        <div class="imgtext">
+                            <a href="#">Browse more</a>
+                        </div>
+                    </div>
+                    <div style="z-index: 9;" class="swiper-slide"><img src="/images/img3.jpg" alt="">
+                        <div class="imgtext">
+                            <a href="#">Browse more</a>
+                        </div>
+                    </div>
+                    <div style="z-index: 9;" class="swiper-slide"><img src="/images/img4.jpg" alt="">
+                        <div class="imgtext">
+                            <a href="#">Browse more</a>
+                        </div>
+                    </div>
+                    <div style="z-index: 9;" class="swiper-slide"><img src="/images/img5.jpg" alt="">
+                        <div class="imgtext">
+                            <a href="#">Browse more</a>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+
+
+        </section>
+        <footer class="container pt-4 my-md-5 pt-md-5 border-top">
+            <div class="row">
+                <div class="col-12 col-md">
+                    <img class="mb-2" src="/images/logo.png" alt="" width="60" height="30">
+                    <small class="d-block mb-3 text-muted">© 2020-2021</small>
+                </div>
+                <div class="col-6 col-md">
+                    <h5>Features</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="link-secondary" href="#">Cool stuff</a></li>
+                        <li><a class="link-secondary" href="#">Random feature</a></li>
+                        <li><a class="link-secondary" href="#">Team feature</a></li>
+                        <li><a class="link-secondary" href="#">Stuff for developers</a></li>
+                        <li><a class="link-secondary" href="#">Another one</a></li>
+                        <li><a class="link-secondary" href="#">Last time</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md">
+                    <h5>Resources</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="link-secondary" href="#">Resource</a></li>
+                        <li><a class="link-secondary" href="#">Resource name</a></li>
+                        <li><a class="link-secondary" href="#">Another resource</a></li>
+                        <li><a class="link-secondary" href="#">Final resource</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md">
+                    <h5>About</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="link-secondary" href="#">Team</a></li>
+                        <li><a class="link-secondary" href="#">Locations</a></li>
+                        <li><a class="link-secondary" href="#">Privacy</a></li>
+                        <li><a class="link-secondary" href="#">Terms</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            effect: 'coverflow',
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: 'auto',
+            coverflowEffect: {
+                rotate: 20,
+                stretch: 0,
+                depth: 200,
+                modifier: 1,
+                slideShadows: true,
+            },
+            loop: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: true,
+            },
+        });
+
+        let ham = document.getElementById("ham")
+        let list = document.getElementById("list")
+        ham.addEventListener("click", () => {
+            list.classList.toggle("active")
+        }
+
+        )
+
+    </script>
+</body>
+
+</html>
