@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  background-color: rgba(235, 168, 183, 0.281);
+}
+.nav .list li {
+  display: inline;
+}
+.nav .list {
+  margin-left: 50px;
+}
+.navbar-brand{
+  font-family: 'Kaushan Script', cursive;
+  font-weight: 400;
+  font-size: 50px;
+  }
+.nav {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 30px 100px;
+ /* position: fixed;*/
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+.nav .list li a {
+  margin-right: 30px;
+  color: black;
+  font-weight: 700;
+}
+.iconify {
+  margin-right: 30px;
+}
+.nav .list li a:hover {
+  color: crimson;
+}
+@keyframes zoom {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.ham {
+  display: none;
+}
