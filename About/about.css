@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+body {
+  background-color: rgba(235, 168, 183, 0.281);
+}
+.nav .list li {
+  display: inline;
+}
+.nav .list {
+  margin-left: 50px;
+}
+.navbar-brand{
+  font-family: 'Kaushan Script', cursive;
+  font-weight: 400;
+  font-size: 50px;
+  }
+.nav {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 30px 100px;
+ /* position: fixed;*/
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+.nav .list li a {
+  margin-right: 30px;
+  color: black;
+  font-weight: 700;
+}
+.iconify {
+  margin-right: 30px;
+}
+.nav .list li a:hover {
+  color: crimson;
+}
+@keyframes zoom {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.ham {
+  display: none;
+}
+.hometext h1 {
+  font-weight: bold;
+}
+.hometext p {
+  font-size: 20px;
+  text-align: center;
+}
+.personimage img {
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+}
+.home {
+  margin: 100px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.hometext .homeheading {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 30px;
+  transition: 0.5s;
+  animation: zoom 4s;
+}
+@media (max-width: 990px) {
+  .logo img {
+    height: 30px;
+    width: 100px;
+  }
+  .ham {
+    display: block;
+  }
+  .nav .list {
+    top: 70px;
+    left: -100%;
+    margin: 0;
+    display: block;
+    position: fixed;
+    padding: 100px 50px;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    transition: 0.5s;
+    z-index: 99;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .nav .list.active {
+    top: 70px;
+    left: 0;
+    margin: 0;
+    display: block;
+    position: fixed;
+    padding: 100px 50px;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    transition: 0.3s all ease;
+    z-index: 999;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .nav .list li a {
+    display: block;
+    color: black !important;
+    font-size: 18px;
+    margin: 20px 0;
+  }
+  section {
+    padding: 20px;
+  }
+  .nav {
+    padding: 10px;
+  }
+
+  .iconify {
+    margin-right: 20px;
+  }
+  .home {
+    margin: 100px 0 20px 0;
+
+    flex-direction: column;
+  }
+  .personimage img {
+    height: 300px;
+    width: 300px;
+  }
+
+  .hometext .homeheading {
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+  .hometext p {
+    font-size: 16px;
+  }
+  .homeimages {
+    height: 100%;
+  }
+  .icons {
+    margin-top: 10px;
+  }
+}
+
