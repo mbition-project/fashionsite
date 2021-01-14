@@ -16,11 +16,11 @@ body {
 .nav .list {
   margin-left: 50px;
 }
-.navbar-brand{
-  font-family: 'Kaushan Script', cursive;
+.navbar-brand {
+  font-family: "Kaushan Script", cursive;
   font-weight: 400;
   font-size: 50px;
-  }
+}
 .nav {
   background-color: white;
   display: flex;
@@ -28,7 +28,7 @@ body {
   align-items: center;
   width: 100%;
   padding: 30px 100px;
- /* position: fixed;*/
+  /* position: fixed;*/
   top: 0;
   left: 0;
   z-index: 99;
@@ -84,10 +84,6 @@ body {
   animation: zoom 4s;
 }
 @media (max-width: 990px) {
-  .logo img {
-    height: 30px;
-    width: 100px;
-  }
   .ham {
     display: block;
   }
@@ -161,4 +157,3 @@ body {
     margin-top: 10px;
   }
 }
-
