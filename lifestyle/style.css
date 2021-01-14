@@ -87,6 +87,10 @@ body {
   cursor: pointer;
   transform: rotateY(180deg);
 }
+.card:hover .frontend {
+  opacity: 0;
+  z-index: -100;
+}
 .frontend {
   border-radius: 20px;
 
