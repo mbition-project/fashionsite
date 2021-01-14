@@ -56,6 +56,10 @@ section {
   transition: 0.5s;
   animation: zoom 4s;
 }
+.page_active {
+  color: crimson !important;
+  border-bottom: 2px solid crimson;
+}
 @keyframes zoom {
   0% {
     transform: scale(0);
